@@ -2,6 +2,7 @@ body {
 	background: url("../images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 10px;
+	overflow: hidden;
 }
 
 /*Title*/
@@ -36,12 +37,12 @@ h2 {
 }
 
 /*Buttons*/
-table {
+.menu {
 	position: absolute;
 	/*border: 1px solid white;*/
 }
 
-td {
+.menu td {
 	height: 23.8vh;
 	vertical-align: middle;
 	transition: 0s;
@@ -56,7 +57,7 @@ td {
 .buttonCard {
 	width: 120px;
 	height: 100px;
-
+	cursor: pointer;
 	position: relative;
 }
 
@@ -111,49 +112,96 @@ td {
 
 /*Overlay*/
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    z-index: 1;
     right: 0;
     top: 0;
-    background-color: rgb(255,255,255); /* Black fallback color */
-    background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgba(0,0,0, 0.5);
+    overflow: hidden;
+    transition: 0.5s; 
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 5%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
+.overlay h1 {
+    padding: 16px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay h1:hover, .overlay h1:focus {
     color: #f1f1f1;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450 pixels, change the font-size of the links */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
 }
+
+
+/*Table of Proj*/
+.projects {
+	position: absolute;
+	padding: 5px;
+	/*border: 5px solid green;*/
+}
+
+.projects h2 {
+	color: white;
+	font-size: 16px;
+}
+
+.projects td {
+	height: 25vh;
+	width: 20vw;
+	vertical-align: middle;
+	text-align: center;
+	background-color: black;
+	/*border: 1px solid white;*/
+}
+
+.container {
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	margin: -1px;
+}
+
+.container img {
+	opacity: 1;
+	display: inline-block;
+	transition: .5s ease;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+	opacity: 0.3;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+
+
+
