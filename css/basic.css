@@ -2,7 +2,7 @@ body {
 	background: url("../images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 /*Title*/
@@ -119,7 +119,7 @@ h2 {
     right: 0;
     top: 0;
     background-color: rgba(0,0,0, 0.5);
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: 0.5s; 
 }
 
@@ -131,7 +131,7 @@ h2 {
 }
 
 .overlay h1 {
-    padding: 16px;
+    padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
@@ -151,8 +151,8 @@ h2 {
 
 /*Table of Proj*/
 .projects {
-	position: absolute;
-	padding: 5px;
+	position: relative;
+	padding: 10px;
 	/*border: 5px solid green;*/
 }
 
@@ -161,20 +161,17 @@ h2 {
 	font-size: 16px;
 }
 
-.projects td {
+.container {
+	position: relative;
 	height: 25vh;
-	width: 20vw;
+	width: 33vw;
 	vertical-align: middle;
 	text-align: center;
 	background-color: black;
-	/*border: 1px solid white;*/
-}
-
-.container {
 	vertical-align: middle;
-	text-align: center;
-	position: relative;
 	margin: -1px;
+
+	/*border: 1px solid white;*/
 }
 
 .container img {
