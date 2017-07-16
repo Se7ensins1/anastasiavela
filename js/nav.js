@@ -1,7 +1,7 @@
 function moveTitle() {
-	var nav=document.getElementsByTagName('td');
-	for (j=0; j<nav.length; j++) {
-		nav[j].style.height="20.5vh";
+	for (j=1; j<5; j++) {
+        var id = j.toString() + "menu";
+		document.getElementById(id).style.height="20.5vh";
 	}
 
     document.getElementById("title").style.paddingLeft="15px";
@@ -16,10 +16,7 @@ function moveTitle() {
 	
 	document.getElementById("name").style.fontSize="2.2em";
     document.getElementById("port").style.fontSize="1.2em";
-    document.getElementById("port").style.marginBottom="-10px";
-
-
-    
+    document.getElementById("port").style.marginBottom="-10px";    
 }
 
 function openProjects() {
@@ -27,6 +24,7 @@ function openProjects() {
     document.getElementById("navLessons").style.width = "0%";
     document.getElementById("navAbout").style.width = "0%";
     moveTitle();
+    resizeImages();
 }
 
 function openLessons() {
@@ -42,3 +40,31 @@ function openAbout() {
     document.getElementById("navAbout").style.width = "45%";
     moveTitle();
 }
+
+
+function resizeImages() {
+
+    for(i=1; i <= 12; i++) {
+        var num = i.toString();
+        var img = document.getElementById(num);
+        var width = img.naturalWidth;
+        var height = img.naturalHeight;
+
+        if (width > height) {
+            img.style.maxHeight = "100%";
+            img.style.minWidth = "100%";
+        } else if (width < height) {
+            img.style.maxWidth = "100%";
+            img.style.minHeight = "100%";
+        } else {
+            img.style.maxWidth = "100%";
+            img.style.maxHeight = "100%";
+        }
+    }
+    
+}
+
+$(function() {
+        $('#1').hide(); // this or use css to hide the div
+        $('#1').delay(2000).fadeIn('slow');
+    });

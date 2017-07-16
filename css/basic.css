@@ -2,7 +2,7 @@ body {
 	background: url("../images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 10px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 /*Title*/
@@ -119,15 +119,8 @@ h2 {
     right: 0;
     top: 0;
     background-color: rgba(0,0,0, 0.5);
-    /*overflow: hidden;*/
-    transition: 0.5s; 
-}
-
-.overlay-content {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .overlay h1 {
@@ -137,56 +130,53 @@ h2 {
     color: #818181;
     display: block;
     transition: 0.3s;
+    text-align: center;
 }
 
 .overlay h1:hover, .overlay h1:focus {
     color: #f1f1f1;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links */
+/* When screen's height is < 450 pixels, change font-size of links */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
 }
 
 
-/*Table of Proj*/
-.projects {
-	position: relative;
-	padding: 10px;
-	/*border: 5px solid green;*/
-}
 
-.projects h2 {
-	color: white;
+/*Projects Overlay*/
+.container h2 {
+    text-align: center;
 	font-size: 16px;
 }
 
 .container {
 	position: relative;
-	height: 25vh;
-	width: 33vw;
-	vertical-align: middle;
-	text-align: center;
+	height: 21.7vh;
+	width: 14.7vw;
 	background-color: black;
-	vertical-align: middle;
-	margin: -1px;
-
-	/*border: 1px solid white;*/
+	overflow: hidden;
+	float: right;
+	/*border: 1px solid green;*/
 }
 
 .container img {
+	position: relative;
 	opacity: 1;
 	display: inline-block;
 	transition: .5s ease;
-	max-height: 100%;
-	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	/*border: 1px dotted white; */
 }
 
 .middle {
 	transition: .5s ease;
 	opacity: 0;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
