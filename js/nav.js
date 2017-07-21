@@ -45,8 +45,9 @@ function openAbout() {
 function resizeImages() {
 
     for(i=1; i <= 12; i++) {
-        var num = i.toString();
-        var img = document.getElementById(num);
+        var id = "img" + i.toString();
+        var cont = "cont" + i.toString();
+        var img = document.getElementById(id);
         var width = img.naturalWidth;
         var height = img.naturalHeight;
 

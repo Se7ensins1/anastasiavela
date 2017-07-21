@@ -154,6 +154,7 @@ h2 {
 	position: relative;
 	height: 21.7vh;
 	width: 14.7vw;
+	margin: 2px;
 	background-color: black;
 	overflow: hidden;
 	float: right;
@@ -165,6 +166,7 @@ h2 {
 	opacity: 1;
 	display: inline-block;
 	transition: .5s ease;
+	/*overflow: hidden;*/
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
