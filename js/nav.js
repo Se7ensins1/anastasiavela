@@ -25,6 +25,7 @@ function openProjects() {
     document.getElementById("navAbout").style.width = "0%";
     moveTitle();
     resizeImages();
+    setTimeout("show()", 500);
 }
 
 function openLessons() {
@@ -32,6 +33,7 @@ function openLessons() {
     document.getElementById("navLessons").style.width = "45%";
     document.getElementById("navAbout").style.width = "0%";
     moveTitle();
+    disappear();
 }
 
 function openAbout() {
@@ -39,6 +41,7 @@ function openAbout() {
     document.getElementById("navLessons").style.width = "0%";
     document.getElementById("navAbout").style.width = "45%";
     moveTitle();
+    disappear();
 }
 
 
@@ -46,7 +49,6 @@ function resizeImages() {
 
     for(i=1; i <= 12; i++) {
         var id = "img" + i.toString();
-        var cont = "cont" + i.toString();
         var img = document.getElementById(id);
         var width = img.naturalWidth;
         var height = img.naturalHeight;
@@ -65,7 +67,11 @@ function resizeImages() {
     
 }
 
-$(function() {
-        $('#1').hide(); // this or use css to hide the div
-        $('#1').delay(2000).fadeIn('slow');
-    });
+
+function show() {
+    document.getElementById("containers").style.display = "inline";
+}
+
+function disappear() {
+    document.getElementById("containers").style.display = "none";
+}

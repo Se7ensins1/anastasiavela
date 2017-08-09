@@ -5,6 +5,10 @@ body {
 	overflow: hidden;
 }
 
+@font-face {
+	font-family: Eurostile; src: url('./EUROSTIB.ttf');
+}
+
 /*Title*/
 #title {
 	position: absolute;
@@ -36,6 +40,7 @@ h2 {
 	transition: .75s;
 }
 
+
 /*Buttons*/
 .menu {
 	position: absolute;
@@ -47,11 +52,6 @@ h2 {
 	vertical-align: middle;
 	transition: 0s;
 	/*border: 1px solid white;*/
-}
-
-@font-face {
-	font-family: Eurostile; src: url('./EUROSTIB.tTf');
-
 }
 
 .buttonCard {
@@ -144,7 +144,12 @@ h2 {
 
 
 
-/*Projects Overlay*/
+/*Projects*/
+.containers {
+	display: none;
+	margin: 2px;
+}
+
 .container h2 {
     text-align: center;
 	font-size: 16px;
@@ -152,12 +157,13 @@ h2 {
 
 .container {
 	position: relative;
-	height: 21.7vh;
-	width: 14.7vw;
-	margin: 2px;
+	height: 21.8vh;
+	width: 14.8vw;
+	margin: 0px;
 	background-color: black;
 	overflow: hidden;
 	float: right;
+	transition: 2s ease;
 	/*border: 1px solid green;*/
 }
 
@@ -166,7 +172,7 @@ h2 {
 	opacity: 1;
 	display: inline-block;
 	transition: .5s ease;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -192,5 +198,38 @@ h2 {
 	opacity: 1;
 }
 
+
+
+/*Lessons*/
+.lesText {
+	color: white;
+	font-family: Eurostile;
+	font-size: 1.8em;
+	margin: 10px;
+}
+
+.lesText a {
+	color: white;
+}
+
+
+
+/*About*/
+.aboutImage {
+	float: left;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+.aboutText {
+	color: white;
+	font-family: Eurostile;
+	font-size: 1.8em;
+	display: block;
+}
+
+.aboutText a {
+	color: white;
+}
 
 
