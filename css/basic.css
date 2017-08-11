@@ -154,8 +154,7 @@ h2 {
 
 /*Projects*/
 .containers {
-	margin: 2px;
-	width: 45vw;
+	width: 44vw;
 }
 
 .container h2 {
@@ -166,8 +165,7 @@ h2 {
 .container {
 	position: relative;
 	height: 21.8vh;
-	width: 14.8vw;
-	margin: 0px;
+	width: 14.5vw;
 	background-color: black;
 	overflow: hidden;
 	float: right;
@@ -205,11 +203,52 @@ h2 {
 	opacity: 1;
 }
 
-.popUp {
-	display: none;
+
+/*project popups*/
+.proj {
+	position: fixed;
 	color: white;
-	left: 30%;
-	margin: 150px;
+	left: 12%;
+	top: 23%;
+	width: 40vw;
+	height: 40vh;
+	text-align: center;
+}
+
+.slideshow-container {
+	display: none;
+}
+
+.slideshow-container img {
+	max-width: 100%;
+	height: 40vh;
+}
+
+.mySlides {
+	display:none;
+}
+
+.dots {
+	display: none;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
 }
 
 @keyframes fadeIn {
@@ -220,6 +259,13 @@ h2 {
 	}
 }
 
+a.button {
+	-webkit-appearance: button;
+	text-decoration: none;
+    color: initial;
+    width: 50px;
+}
+
 
 /*Lessons*/
 .lesText {
@@ -228,11 +274,25 @@ h2 {
 	font-size: 1.8em;
 	margin: 10px;
 	display: block;
-	width: 45vw;
+	width: 44vw;
 }
 
 .lesText a {
 	color: white;
+}
+
+.tblLesson {
+	width: 44vw;
+	text-align: center;
+}
+
+.tblLesson th {
+	width: 20vw;
+	text-align: center;
+}
+
+.tblTitle {
+	font-size: 1.4em;
 }
 
 
@@ -249,11 +309,9 @@ h2 {
 	color: white;
 	font-family: Eurostile;
 	font-size: 1.8em;
-	width: 45vw;
+	width: 44vw;
 }
 
 .aboutText a {
 	color: white;
 }
-
-

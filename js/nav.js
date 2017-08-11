@@ -20,37 +20,33 @@ function moveTitle() {
 }
 
 function openProjects() {
+    closeOverlays()
     document.getElementById("navProjects").style.width = "45%";
-    document.getElementById("navLessons").style.width = "0%";
-    document.getElementById("navAbout").style.width = "0%";
     moveTitle();
     resizeImages();
 }
 
 function openLessons() {
-    document.getElementById("navProjects").style.width = "0%";
+    closeOverlays()
     document.getElementById("navLessons").style.width = "45%";
-    document.getElementById("navAbout").style.width = "0%";
     moveTitle();
-    for(i=1; i<=12; i++) {
-        var id = i.toString() + "pop"
-        document.getElementById(id).style.display = "none";
-    }
+    closePopUps();
 }
 
 function openAbout() {
-    document.getElementById("navProjects").style.width = "0%";
-    document.getElementById("navLessons").style.width = "0%";
+    closeOverlays()
     document.getElementById("navAbout").style.width = "45%";
     moveTitle();
-    for(i=1; i<=12; i++) {
-        var id = i.toString() + "pop"
-        document.getElementById(id).style.display = "none";
-    }
+    closePopUps();
+}
+
+function closeOverlays() {
+    document.getElementById("navProjects").style.width = "0%";
+    document.getElementById("navLessons").style.width = "0%";
+    document.getElementById("navAbout").style.width = "0%";
 }
 
 function resizeImages() {
-
     for(i=1; i <= 12; i++) {
         var id = "img" + i.toString();
         var img = document.getElementById(id);
@@ -68,127 +64,45 @@ function resizeImages() {
             img.style.maxHeight = "100%";
         }
     }
-    
 }
 
+var timer = 0;
 
-
-function onePop() {
-    document.getElementById("1pop").style.display = "inline";
+function closePopUps(timer) {
     for(i=1; i<=12; i++) {
-        if (i != 1) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
+        document.getElementById(i.toString() + "pop").style.display = "none";
+    }
+    document.getElementsByClassName("dots")[0].style.display = "none";
+    if (timer) {
+        clearTimeout(timer);
+        timer = 0;
     }
 }
 
-function twoPop() {
-    document.getElementById("2pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 2) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
+function closePopExcept(j) {
+    closePopUps(timer);
+    document.getElementById(j.toString() + "pop").style.display = "inline";
+    showSlides(j, 1);
+    document.getElementsByClassName("dots")[0].style.display = "inline";
 }
 
-function threePop() {
-    document.getElementById("3pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 3) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
+function showSlides(j, k) {
+    for (i = 1; i < 6; i++) {
+       document.getElementById(j.toString() + "." + i.toString()).style.display = "none";  
     }
+    document.getElementById(j.toString() + "." + k.toString()).style.display = "inline";
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[k-1].className += " active";
+    k++;
+    if (k > 5) {
+        k = 1;
+    }
+    timer = setTimeout(showSlides, 3000, j, k);
 }
 
-function fourPop() {
-    document.getElementById("4pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 4) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function fivePop() {
-    document.getElementById("5pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 5) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function sixPop() {
-    document.getElementById("6pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 6) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function sevenPop() {
-    document.getElementById("7pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 7) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function eightPop() {
-    document.getElementById("8pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 8) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function ninePop() {
-    document.getElementById("9pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 9) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function tenPop() {
-    document.getElementById("10pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 10) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function elevenPop() {
-    document.getElementById("11pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 11) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
-}
-
-function twelvePop() {
-    document.getElementById("12pop").style.display = "inline";
-    for(i=1; i<=12; i++) {
-        if (i != 12) {
-            var id = i.toString() + "pop"
-            document.getElementById(id).style.display = "none";
-        }
-    }
+function goBack() {
+    window.history.back();
 }
