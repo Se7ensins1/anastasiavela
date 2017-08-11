@@ -99,13 +99,19 @@ h2 {
 
 
 @keyframes rotateIn {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {
+    	transform: rotate(0deg);
+    } to {
+    	transform: rotate(360deg);
+    }
 }
 
 @keyframes rotateOut {
-    from {transform: rotate(360deg);}
-    to {transform: rotate(0deg);}
+    from {
+    	transform: rotate(360deg);
+    } to {
+    	transform: rotate(0deg);
+    }
 }
 
 
@@ -139,16 +145,17 @@ h2 {
 
 /* When screen's height is < 450 pixels, change font-size of links */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+    	font-size: 20px
+    }
 }
 
 
 
 /*Projects*/
 .containers {
-	display: none;
 	margin: 2px;
-	-webkit-animation: fadeIn 2s;
+	width: 45vw;
 }
 
 .container h2 {
@@ -213,12 +220,15 @@ h2 {
 	}
 }
 
+
 /*Lessons*/
 .lesText {
 	color: white;
 	font-family: Eurostile;
 	font-size: 1.8em;
 	margin: 10px;
+	display: block;
+	width: 45vw;
 }
 
 .lesText a {
@@ -232,13 +242,14 @@ h2 {
 	float: left;
 	margin: 10px;
 	margin-top: 0px;
+	width: 20vw;
 }
 
 .aboutText {
 	color: white;
 	font-family: Eurostile;
 	font-size: 1.8em;
-	display: block;
+	width: 45vw;
 }
 
 .aboutText a {
