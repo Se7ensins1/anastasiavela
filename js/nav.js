@@ -21,21 +21,21 @@ function moveTitle() {
 
 function openProjects() {
     closeOverlays()
-    document.getElementById("navProjects").style.width = "45%";
+    document.getElementById("navProjects").style.width = "67vh";
     moveTitle();
     resizeImages();
 }
 
 function openLessons() {
     closeOverlays()
-    document.getElementById("navLessons").style.width = "45%";
+    document.getElementById("navLessons").style.width = "67vh";
     moveTitle();
     closePopUps();
 }
 
 function openAbout() {
     closeOverlays()
-    document.getElementById("navAbout").style.width = "45%";
+    document.getElementById("navAbout").style.width = "67vh";
     moveTitle();
     closePopUps();
 }
