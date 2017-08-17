@@ -23,7 +23,6 @@ function openProjects() {
     closeOverlays()
     document.getElementById("navProjects").style.width = "67vh";
     moveTitle();
-    resizeImages();
 }
 
 function openLessons() {
@@ -44,26 +43,6 @@ function closeOverlays() {
     document.getElementById("navProjects").style.width = "0%";
     document.getElementById("navLessons").style.width = "0%";
     document.getElementById("navAbout").style.width = "0%";
-}
-
-function resizeImages() {
-    for(i=1; i <= 12; i++) {
-        var id = "img" + i.toString();
-        var img = document.getElementById(id);
-        var width = img.naturalWidth;
-        var height = img.naturalHeight;
-
-        if (width > height) {
-            img.style.maxHeight = "100%";
-            img.style.minWidth = "100%";
-        } else if (width < height) {
-            img.style.maxWidth = "100%";
-            img.style.minHeight = "100%";
-        } else {
-            img.style.maxWidth = "100%";
-            img.style.maxHeight = "100%";
-        }
-    }
 }
 
 var timer = 0;
@@ -101,8 +80,4 @@ function showSlides(j, k) {
         k = 1;
     }
     timer = setTimeout(showSlides, 3000, j, k);
-}
-
-function goBack() {
-    window.history.back();
 }
