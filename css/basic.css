@@ -213,8 +213,8 @@ h2 {
 	color: white;
 	left: 135px;
 	right: 67vh;
-	top: 20%;
-	height: 425px;
+	top: 10%;
+	height: 420px;
 	text-align: center;
 	/*border: 1px solid white;*/
 }
@@ -226,12 +226,50 @@ h2 {
 }
 
 .slideshow-container img {
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 }
 
 .mySlides {
-	display:none;
+	display: none;
+}
+
+.slideText-container {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.slideText {
+	padding-top: 0px;
+	text-align: left;
+	font-family: Eurostile;
+	font-size: 2em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 380px;
+}
+
+/* Let's get this party started */
+.slideText::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.slideText::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.slideText::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.slideText::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
 }
 
 .dots {
@@ -281,7 +319,7 @@ a.button {
 	font-size: 1.8em;
 	margin: 10px;
 	display: block;
-	width: 44vw;
+	width: 67vh;
 }
 
 .lesText a {
@@ -289,7 +327,7 @@ a.button {
 }
 
 .tblLesson {
-	width: 44vw;
+	width: 66vh;
 	text-align: center;
 }
 
@@ -316,7 +354,7 @@ a.button {
 	color: white;
 	font-family: Eurostile;
 	font-size: 1.8em;
-	width: 44vw;
+	width: 66vh;
 }
 
 .aboutText a {

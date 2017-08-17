@@ -63,6 +63,7 @@ function closePopExcept(j) {
     document.getElementById(j.toString() + "pop").style.display = "inline";
     showSlides(j, 1);
     document.getElementsByClassName("dots")[0].style.display = "inline";
+
 }
 
 function showSlides(j, k) {
