@@ -154,8 +154,8 @@ h2 {
 
 /*Projects*/
 .containers {
-	width: 65.1vh;
-	margin: 10px;
+	width: 155vh;
+	margin: 20px;
 }
 
 .container h2 {
@@ -169,10 +169,20 @@ h2 {
 	width: 21.7vh;
 	background-color: black;
 	overflow: hidden;
-	float: right;
+	float: left;
 	transition: 2s ease;
 	cursor: pointer;
 	/*border: 1px solid green;*/
+}
+
+.year {
+	height: 25vh;
+}
+
+.yearText {
+	font-family: Eurostile;
+	font-size: 2em;
+	color: white;
 }
 
 .container img {
@@ -235,6 +245,7 @@ h2 {
 }
 
 .slideText-container {
+	display: none;
 	padding-left: 60px;
 	padding-right: 60px;
 }
