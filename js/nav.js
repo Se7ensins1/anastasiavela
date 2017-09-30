@@ -51,7 +51,7 @@ var timer = 0;
 function closePopUps(timer) {
     for(i=1; i<=12; i++) {
         document.getElementById(i.toString() + "pop").style.display = "none";
-        document.getElementById(i.toString() + "text").style.display = "none";
+        // document.getElementById(i.toString() + "text").style.display = "none";
     }
     document.getElementsByClassName("dots")[0].style.display = "none";
     if (timer) {
@@ -62,10 +62,10 @@ function closePopUps(timer) {
 
 function closePopExcept(j) {
     closePopUps(timer);
-    document.getElementById(j.toString() + "pop").style.display = "inline";
-    showSlides(j, 1);
     document.getElementsByClassName("dots")[0].style.display = "inline";
-    document.getElementById(j.toString() + "text").style.display = "inline";
+    document.getElementById(j.toString() + "pop").style.display = "inline";
+    // document.getElementById(j.toString() + "text").style.display = "inline";
+    showSlides(j, 1);
 
 }
 
