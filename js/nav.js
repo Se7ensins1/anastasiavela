@@ -51,7 +51,7 @@ var timer = 0;
 function closePopUps(timer) {
     for(i=1; i<=12; i++) {
         document.getElementById(i.toString() + "pop").style.display = "none";
-        // document.getElementById(i.toString() + "text").style.display = "none";
+        document.getElementById(i.toString() + "text").style.display = "none";
     }
     document.getElementsByClassName("dots")[0].style.display = "none";
     if (timer) {
