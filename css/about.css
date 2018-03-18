@@ -1,0 +1,18 @@
+/*About*/
+.aboutImage {
+	float: left;
+	margin: 10px;
+	margin-top: 0px;
+	width: 20vw;
+}
+
+.aboutText {
+	color: white;
+	font-family: Eurostile;
+	font-size: 1.8em;
+	width: 66vh;
+}
+
+.aboutText a {
+	color: white;
+}
