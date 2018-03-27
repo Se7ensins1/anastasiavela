@@ -1,0 +1,9 @@
+#title {
+	position: absolute;
+    top: 50vh;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -170px;
+    width: 460px;
+    height: 300px;
+}

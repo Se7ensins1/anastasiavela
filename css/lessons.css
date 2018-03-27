@@ -1,11 +1,17 @@
 /*Lessons*/
+.col-lg-11 {
+	display: flex;
+	justify-content: center;
+}
+
+#bodyCont{
+	width: 87%;
+}
+
 .lesText {
+	font-size: 2em;
 	color: white;
-	font-family: Eurostile;
-	font-size: 1.8em;
-	margin: 10px;
-	display: block;
-	width: 67vh;
+	margin: 1em;
 }
 
 .lesText a {
@@ -23,5 +29,5 @@
 }
 
 .tblTitle {
-	font-size: 1.4em;
+	font-size: 2em;
 }

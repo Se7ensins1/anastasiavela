@@ -1,0 +1,82 @@
+/**{border: 1px white solid }*/
+
+/*center column*/
+.col-lg-8 {
+	display: flex;
+	justify-content: center;
+}
+
+#bodyCont{
+	width: 80%;
+}
+
+/*title*/
+h1 {
+	font-size: 6em;
+	margin-top: 0.25em;
+}
+
+h1::first-letter { 
+	font-size: 1.4em;
+	color: rgba(58, 242, 119, 1);
+}
+
+/*scrollbar stuff*/
+.scrollbarText {
+	margin-top: 2em;
+	height: 88vh;
+	padding-right: 1em;
+	overflow: auto;
+}
+
+.scrollbarText::-webkit-scrollbar {
+	width: 1.2em;
+}
+
+.scrollbarText::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 .6em rgba(0,0,0,0.3);
+}
+
+.scrollbarText::-webkit-scrollbar-thumb {
+	background: rgba(58, 242, 119, 1); 
+	-webkit-box-shadow: inset 0 0 .6em rgba(0,0,0,0.5);
+}
+
+.scrollbarText::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(58, 242, 119, 0.4);
+}
+
+.scrollbarText img {
+	width: 40em;
+}
+
+.leftImg {
+	float: left;
+	margin: 0 2em 0.6em 0;
+}
+
+.rightImg {
+	float: right;
+	margin: 0 0 0.6em 2em;
+}
+
+.scrollbarText p {
+	font-size: 2em;
+	position: relative;
+	color: white;
+	text-align: left;
+}
+
+/*vertical carousel*/
+.verticalCarousel{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	overflow-y: scroll;
+}
+
+.verticalCarousel img {
+	margin: .6em 0;
+	width: 100%;
+	position: relative;
+}

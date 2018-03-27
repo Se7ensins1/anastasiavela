@@ -1,16 +1,22 @@
-/*About*/
+.col-lg-11 {
+	display: flex;
+	justify-content: center;
+}
+
+#bodyCont{
+	width: 87%;
+}
+
 .aboutImage {
 	float: left;
-	margin: 10px;
-	margin-top: 0px;
+	margin: 1em;
 	width: 20vw;
 }
 
 .aboutText {
+	font-size: 2em;
 	color: white;
-	font-family: Eurostile;
-	font-size: 1.8em;
-	width: 66vh;
+	margin: 1em;
 }
 
 .aboutText a {
