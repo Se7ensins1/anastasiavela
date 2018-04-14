@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="../css/basic.css" />
 		<link rel="stylesheet" href="../css/project.css" />
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 	</head>
@@ -79,47 +80,167 @@
 				<div id="bodyCont">
 					<h1> Spot-the-Future </h1>
 					<div class="scrollbarText">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu felis, venenatis nec orci vel, egestas mattis libero. Praesent faucibus, nunc quis bibendum ornare, lacus lorem malesuada justo, in aliquet justo lectus sed dolor. Sed sit amet ipsum ac nunc molestie rutrum. Curabitur tempus, nisl id congue elementum, ipsum dui laoreet tellus, eu rhoncus turpis neque et sem. Pellentesque finibus massa non velit scelerisque maximus at sed urna. Phasellus porta in felis at condimentum. Nam non odio ut sapien efficitur euismod. Nam nec libero mollis, suscipit augue quis, sodales nisi. Nullam vitae porttitor eros. Sed pulvinar faucibus nibh quis viverra. Ut tempus, dui a sollicitudin ullamcorper, justo velit iaculis erat, at facilisis ligula sem at nibh. Etiam non lorem tellus. Curabitur maximus leo metus, a semper justo malesuada luctus.</p>
+						<div class="section">
+							<h3>Introduction</h3>
 
-						<img class="leftImg" src="../images/andy/9.jpg">
+							<p>In 2012, South Korean pop artist Park Jae-sang, known professionally as Psy, released his hit single "Gangnam Style," which broke YouTube record by being the first music video to exceed one billion views.</p>
 
-						<p>Nulla blandit et arcu vel viverra. Duis sollicitudin lacus augue, quis pretium leo pellentesque vitae. Donec consectetur lobortis leo, vel feugiat augue pharetra in. Mauris commodo imperdiet tellus, sit amet sollicitudin odio bibendum vitae. Aliquam vitae laoreet quam. Proin sed lobortis ex. Sed ut felis et ipsum luctus consequat sit amet quis quam. Vivamus vel mi quis nisl hendrerit efficitur quis suscipit tortor. Mauris facilisis vulputate leo aliquam molestie. Quisque consequat nibh ac erat aliquam, ac dapibus lectus blandit. Duis finibus justo laoreet arcu gravida, ac semper ante rutrum. Sed posuere mattis libero, nec facilisis felis dignissim vitae. Maecenas vel placerat sem. Donec maximus sodales purus vitae gravida. Vivamus vitae fermentum nibh, vel suscipit nunc. Nam viverra nibh eleifend scelerisque iaculis.</p>
+							<img class="centerImg" src="../images/spotify/top5.jpg" style="width: 98%;">
 
-						<p>Donec interdum nulla nec odio semper, in interdum purus interdum. Fusce pretium maximus leo, ut volutpat lacus varius non. Duis congue maximus urna, sed consequat dolor tempus sit amet. Duis placerat neque leo, sed porttitor velit dictum ac. Vestibulum tristique, est vel dignissim mollis, eros tortor cursus nulla, eu lobortis justo ex placerat orci. Ut congue, ipsum vel malesuada viverra, sapien metus efficitur erat, in condimentum ipsum erat quis erat. Duis tristique elit quis risus semper sodales. Suspendisse feugiat turpis ac dolor sollicitudin varius. Fusce vitae dolor sodales, volutpat nunc a, euismod nulla.</p>
+							<p>With Korean pop song Gangnam Style being the first to break the one-billion mark, we began to wonder about the progression of music trends, especially considering only 80 million people speak Korean worldwide (5.3% of the world population) as compared to 1.5 billion people who speak English (20%). It is surprising that a strictly Korean sung song first broke one billion views, instead of an English sung song.</p>
 
-						<p>Curabitur vehicula volutpat leo quis consequat. Maecenas vestibulum ultricies convallis. Duis tristique lacus purus, at vehicula enim porttitor in. Integer non varius erat. Aliquam eget velit felis. Aliquam fermentum erat eget tincidunt blandit. Morbi a interdum quam. Curabitur sed tellus ac nunc ullamcorper lobortis et vitae odio. Fusce ipsum ante, sodales et ipsum vitae, tristique tincidunt ex. Sed dapibus, dolor nec elementum vestibulum, orci nunc dictum turpis, elementum tristique justo ante et lacus.</p>
+							<p>Since language didn’t hinder the prevalence of an unfamiliar culture from entering mainstream trends, what classifies a popular song? How have these characteristics changed over the course of?</p>
 
-						<img class="rightImg" src="../images/andy/8.jpg">
+							<p>A few classmates and I collected the top 100 songs from the years 2012 to 2016 that Billboard provided and used Spotify’s Web API to detail each song’s characteristics, such as danceability, energy, and tempo to compare how top song preferences have changed over the years.</p>
+						</div>
+						
+						<div class="section">
+							<h3>Data Collection - Billboard and Spotify Web API</h3>
 
-						<p>Maecenas ullamcorper massa commodo turpis rutrum fringilla. Praesent eu porta neque, viverra luctus libero. Donec imperdiet ante eget cursus ultrices. Aliquam erat volutpat. Quisque placerat, enim id tristique consequat, elit felis scelerisque ex, venenatis lobortis eros nisl at ipsum. Aliquam in fermentum ligula, eu mattis diam. Aliquam non scelerisque dui. Pellentesque eget libero felis. Sed volutpat erat sit amet dui congue, consectetur egestas velit varius. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+							<p>Every end of the year Billboard compiles the Hot 100 Songs, which consists of “the year’s most popular songs across all genres, ranked by radio airplay audience impressions as measured by Nielsen Music, sales data as compiled by Nielsen Music, and streaming activity data provided by online music sources” (Billboard).</p>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu felis, venenatis nec orci vel, egestas mattis libero. Praesent faucibus, nunc quis bibendum ornare, lacus lorem malesuada justo, in aliquet justo lectus sed dolor. Sed sit amet ipsum ac nunc molestie rutrum. Curabitur tempus, nisl id congue elementum, ipsum dui laoreet tellus, eu rhoncus turpis neque et sem. Pellentesque finibus massa non velit scelerisque maximus at sed urna. Phasellus porta in felis at condimentum. Nam non odio ut sapien efficitur euismod. Nam nec libero mollis, suscipit augue quis, sodales nisi. Nullam vitae porttitor eros. Sed pulvinar faucibus nibh quis viverra. Ut tempus, dui a sollicitudin ullamcorper, justo velit iaculis erat, at facilisis ligula sem at nibh. Etiam non lorem tellus. Curabitur maximus leo metus, a semper justo malesuada luctus.</p>
+							<p style="text-align: center;"> Radio Airplay + Sales Data + Streaming Data = HOT 100 Songs </p>
 
-						<p>Nulla blandit et arcu vel viverra. Duis sollicitudin lacus augue, quis pretium leo pellentesque vitae. Donec consectetur lobortis leo, vel feugiat augue pharetra in. Mauris commodo imperdiet tellus, sit amet sollicitudin odio bibendum vitae. Aliquam vitae laoreet quam. Proin sed lobortis ex. Sed ut felis et ipsum luctus consequat sit amet quis quam. Vivamus vel mi quis nisl hendrerit efficitur quis suscipit tortor. Mauris facilisis vulputate leo aliquam molestie. Quisque consequat nibh ac erat aliquam, ac dapibus lectus blandit. Duis finibus justo laoreet arcu gravida, ac semper ante rutrum. Sed posuere mattis libero, nec facilisis felis dignissim vitae. Maecenas vel placerat sem. Donec maximus sodales purus vitae gravida. Vivamus vitae fermentum nibh, vel suscipit nunc. Nam viverra nibh eleifend scelerisque iaculis.</p>
+							<!-- <img class="rightImg" src="../images/spotify/billboard100.jpg"> -->
 
-						<p>Donec interdum nulla nec odio semper, in interdum purus interdum. Fusce pretium maximus leo, ut volutpat lacus varius non. Duis congue maximus urna, sed consequat dolor tempus sit amet. Duis placerat neque leo, sed porttitor velit dictum ac. Vestibulum tristique, est vel dignissim mollis, eros tortor cursus nulla, eu lobortis justo ex placerat orci. Ut congue, ipsum vel malesuada viverra, sapien metus efficitur erat, in condimentum ipsum erat quis erat. Duis tristique elit quis risus semper sodales. Suspendisse feugiat turpis ac dolor sollicitudin varius. Fusce vitae dolor sodales, volutpat nunc a, euismod nulla.</p>
+							<p>Using these compiled lists from the years 2012 to 2016, we generated a dictionary that associated song with its Spotify ID to allow tracking song features easier, because some songs had the same title so we couldn’t search for features by name.</p>
 
-						<p>Curabitur vehicula volutpat leo quis consequat. Maecenas vestibulum ultricies convallis. Duis tristique lacus purus, at vehicula enim porttitor in. Integer non varius erat. Aliquam eget velit felis. Aliquam fermentum erat eget tincidunt blandit. Morbi a interdum quam. Curabitur sed tellus ac nunc ullamcorper lobortis et vitae odio. Fusce ipsum ante, sodales et ipsum vitae, tristique tincidunt ex. Sed dapibus, dolor nec elementum vestibulum, orci nunc dictum turpis, elementum tristique justo ante et lacus.</p>
+							<p>Spotify detailed each song with 13 audio features: some numerical such as danceability and others categorical such as mode.</p>
 
-						<p>Maecenas ullamcorper massa commodo turpis rutrum fringilla. Praesent eu porta neque, viverra luctus libero. Donec imperdiet ante eget cursus ultrices. Aliquam erat volutpat. Quisque placerat, enim id tristique consequat, elit felis scelerisque ex, venenatis lobortis eros nisl at ipsum. Aliquam in fermentum ligula, eu mattis diam. Aliquam non scelerisque dui. Pellentesque eget libero felis. Sed volutpat erat sit amet dui congue, consectetur egestas velit varius. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+							<p>For more information about this library provided by Spotify, <a href="https://developer.spotify.com/web-api/get-audio-features/" target="_blank"> https://developer.spotify.com/web-api/get-audio-features/ </a> <p>
+
+							<!-- <table class="features">
+								<tr>
+									<th>KEY</th>
+									<th>VALUE DESCRIPTION</th>
+								</tr>
+								<tr>
+									<td>Acousticness</td>
+									<td>0.0 to 1.0; 0.0 means track is unlikely acoustic, 1.0 means track is likely acoustic.</td>
+								</tr>
+								<tr>
+									<td>Danceability</td>
+									<td>0.0 to 1.0; 0.0 is least danceable and 1.0 is most danceable.</td>
+								</tr>
+								<tr>
+									<td>Duration</td>
+									<td>The duration of the track in milliseconds.</td>
+								</tr>
+								<tr>
+									<td>Energy</td>
+									<td>0.0 to 1.0; For example, death metal has high energy.</td>
+								</tr>
+								<tr>
+									<td>Instrumentalness</td>
+									<td>0.0 to 1.0; Absence of vocals. Values above 0.5 are likely instrumental tracks.</td>
+								</tr>
+								<tr>
+									<td>Key</td>
+									<td>The key the track is in. 0 = C, 1 = C♯/D♭, 2 = D, and so on.</td>
+								</tr>
+								<tr>
+									<td>Liveness</td>
+									<td>0.0 to 1.0; A value above 0.8 provides strong likelihood that the track is live.</td>
+								</tr>
+								<tr>
+									<td>Loudness</td>
+									<td>The loudness of a track. Values typically range between -60 and 0 db.</td>
+								</tr>
+								<tr>
+									<td>Mode</td>
+									<td>0 or 1; Major is represented by 1 and minor is 0.</td>
+								</tr>
+								<tr>
+									<td>Speechiness</td>
+									<td>0.0 to 1.0; values above 0.66 describe tracks that are probably entirely spoken words.</td>
+								</tr>
+								<tr>
+									<td>Time Signature</td>
+									<td>The overall estimated tempo of a track in beats per minute (BPM).</td>
+								</tr>
+								<tr>
+									<td>Tempo</td>
+									<td>Beats per minute (BPM).</td>
+								</tr>
+								<tr>
+									<td>Valence</td>
+									<td>0.0 to 1.0; 0.0 contains more negative sounds, 1.0 dcontains more positive sounds.</td>
+								</tr>
+							</table> -->
+
+							<p>We ended with 5 tables, each for a year, with 100 entries of the top 100 hot songs joined with all the 13 corresponding audio features provided by Spotify.</p>
+
+							<img class="centerImg" src="../images/spotify/data.jpg" style="width: 98%;">
+						</div>
+
+						<div class="section">
+							<h3>Visualizations</h3>
+
+							<p>INTERACTIVE TIME SCALED SCATTER PLOT USING PYTHON - 2 columns of the song features data table (danceability and energy) are chosen to be the x- and y- axes of the graph. Then each of the 100 top songs is plotted depending on their respective feature. A dial can be switched to change the presented year. However, screenshots were captured instead to handle the lack of interactiveness. There is a slightly present trend that energy and danceability decreases as time progresses. Similar trends can be analyzed by changing the 2 features on the x- and y-axes.</p>
+
+							<p>To run the interactive time scaled scatter plot please download the cleandata folder then download and run the following ipynb file: <a href="https://github.com/anatasiavela/Spot-the-Future/tree/master/code" target="_blank">Time_Segmented_Graph.ipynb</a></p>
+
+							<p>LINE GRAPH - The data present in the graph to the left is scaled on a range of 0 to 1. 0 being the least of the feature and 1 being the strongest of the feature. From each year, an average of the feature was calculated from the top 100 songs and plotted. However, with the features on the right, the data is scaled in an arbitrary way, so the data was standardized depending on each feature data from every year then put into a scale of 0 to 1. With this, trends are seen, as time goes on.</p>
+
+							<p>TABLEAU VISUALIZATIONS - The distribution of danceability follows a distribution that is like a normal distribution while energy level spreads out and does not show a clear pattern of distribution.</p>
+
+							<p>All top songs have low speechiness levels with a maximum of 0.453. This means that most top songs have more music content than speech content. Songs with values below 0.33 most likely represent music and other non-speech-like tracks. Interestingly, we observe songs with higher speech levels have high tempos as well. This is represented in red. One possible conclusion of this finding is that some songs especially rap songs with high speech content have faster tempos as well.</p>
+							
+							<p>From this heat map, we observe that high valence (happy and cheerful) songs tend to have high energy. The correlation between valence and energy is positive.</p>
+
+							<p>For the interactive Tableau visualizations, visit <a href="https://public.tableau.com/views/Spotify_10/Sheet1?:embed=y&:display_count=yes" target="_blank"> Tableau Public </a>.</p>
+						</div>
+
+						<div class="section">
+							<h3>Predictor</h3>
+
+							<img class="centerImg" src="../images/spotify/predictors.jpg" style="width: 98%;">
+
+							<p>In the bar plot, the features of the predicted most popular song of 2017 are the top bars and the average features of the year used for comparison are the bottom bars, where each bar is the value of a feature. The data was rescaled such that all the features fit on a 0 to 1 scale. The bar plot shows how different the predicted song’s features are from the features of the comparison dataset. Using the 2012 dataset, “You’re Still My Sugar” was predicted as the most popular song. With 2013 and 2014, “Chained to the Rhythm” was the predicted song. With 2015 and 2016, “Stay” was the predicted song.</p>
+						</div>
+
+						<div>
+							<h3>Shiny App</h3>
+
+							<p>The Shiny app features two different word clouds and a k-means cluster plot. The first word cloud in the app takes in a selected year and feature and creates a word cloud where the largest songs have the largest values for that feature. In addition, the user can change the maximum number of songs plotted in the word cloud. The second word cloud in the app is similar to the first, except with different artwork and without the ability to change the maximum number of songs plotted. The k-means cluster plot allows the user to choose a year and two features, plot the songs as a scatter plot, and group the songs together by clusters. The app gives the ability to change the number of clusters from 1 to 9, in addition to the ability to hover over a point and retrieve the point’s song, artist, and feature values.</p>
+
+							<p>Visit the Shiny app at: <a href="https://joshasuncion.shinyapps.io/song_visualizer/" target="_blank"> https://joshasuncion.shinyapps.io/song_visualizer</a></p>
+						</div>
+
+						<div>
+							<h3>Conclusion</h3>
+
+							<p>As displayed from the visualizations, we found the energy of the top 100 Billboard songs goes down from 0.737 in 2012 to 0.628 in 2016, while danceability slightly increases from 0.651 to 0.662. In addition, we found that the loudness for the song decreases from 0.842 to 0.760. This implies that the trend for the more popular songs is changing to less energetic, but more danceable songs, which is peculiar because it would be assumed that the more energetic a song is, the more danceable it is. Almost all top songs have a 4/4 time signature.</p>
+
+							<p>We noticed that more top songs are in the minor key (about 50% now) implying that even though minor keys are sadder, they can represent positive songs such as “Happy” by Pharrell Williams. Pharrell’s song is in the minor key but has still gained much popularity.</p>
+
+						</div>
+
+						<div>
+							<h3>Final Thoughts</h3>
+
+							<p>One challenge that we faced: while we were collecting data, some tracks share same names with other songs by different artists and/or different versions. The code returned an error message because the API did not know which value to return. To resolve this, we found that Spotify assigns a unique ID to each track. Therefore, we decided to manually collect ID for each song by inserting an additional column and used ID to extract audio features.</p>
+
+							<p>Another challenge was we experienced some difficulties in deciding which visualizations to make and what tools to use because we didn’t have a clear question in mind. The whole project is based on curiosity and we learned by messing around with the data.</p>
+
+							<p>We had a lot of fun working on the project from collecting data to exploring different options and tools to make visualizations. Although we hit roadblocks when we first tried to use Facebook API to extract mutual friends’ data for our first project idea, we enjoyed the process of exploring other interesting options and coming up with this new idea. We used a variety of tools including Python, R, and Tableau to visualize our data and have found interesting patterns and trends that can be used to explain real world phenomenons about popular songs.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-lg-3">
-				<div class="verticalCarousel">
-					<img src="../images/andy/1.jpg">
-					<img src="../images/andy/2.jpg">
-					<img src="../images/andy/3.jpg">
-					<img src="../images/andy/4.jpg">
-					<img src="../images/andy/5.jpg">
-					<img src="../images/andy/6.jpg">
-					<img src="../images/andy/7.jpg">
-					<img src="../images/andy/8.jpg">
-					<img src="../images/andy/9.jpg">
+				<div class="verticalCarousel" id="autoScroll">
+					<img src="../images/spotify/cloud1.jpg">
+					<img src="../images/spotify/cloud2.jpg">
+					<img src="../images/spotify/energyVspeech.jpg">
+					<img src="../images/logo.jpg">
+					<img src="../images/logo.jpg">
 				</div>
 			</div>
 
 		</div>
 	</body>
+
+	<script src="../js/project.js"></script>
 </html>

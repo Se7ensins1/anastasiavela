@@ -10,15 +10,24 @@
 	width: 80%;
 }
 
+p {
+	font-weight: 550;
+}
+
 /*title*/
 h1 {
 	font-size: 6em;
-	margin-top: 0.25em;
+	margin-top: 0.2em;
 }
 
 h1::first-letter { 
 	font-size: 1.4em;
 	color: rgba(58, 242, 119, 1);
+}
+
+h3 {
+	font-size: 2.8em;
+	text-shadow: 0 0 0.25em rgba(58, 242, 119, 1);
 }
 
 /*scrollbar stuff*/
@@ -50,6 +59,14 @@ h1::first-letter {
 	width: 40em;
 }
 
+.section {
+	margin-top: 3em;
+}
+
+.section p {
+	margin-top: 0.5em;
+}
+
 .leftImg {
 	float: left;
 	margin: 0 2em 0.6em 0;
@@ -60,11 +77,32 @@ h1::first-letter {
 	margin: 0 0 0.6em 2em;
 }
 
+.centerImg {
+	margin: 2em 1em 1em 1em;
+	width: 99%;
+}
+
 .scrollbarText p {
 	font-size: 2em;
 	position: relative;
 	color: white;
 	text-align: left;
+}
+
+.features{
+	font-size: 2em;
+	color: white;
+}
+
+.features table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.features td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 /*vertical carousel*/
@@ -73,6 +111,7 @@ h1::first-letter {
 	width: 100%;
 	position: absolute;
 	overflow-y: scroll;
+	transition: 5s;
 }
 
 .verticalCarousel img {
