@@ -1,14 +1,23 @@
-#title {
-	align-items: center;
-	position: absolute;
-    top: 50vh;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -170px;
-    width: 460px;
-    height: 300px;
+/** {border: 1px solid white;}*/
 
-    -webkit-animation: fadein 3s;
+#flexTitle {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  width: 600px;
+  background-color: rgba(72,72,72, 0.8);
+  padding: 50px;
+  -webkit-animation: fadein 3s;
+  transition: 2s;
+  border-radius: 10px;
+}
+
+#title:hover {
+   background-color: rgba(72,72,72, 0.25)
 }
 
 @keyframes fadein {
@@ -22,19 +31,52 @@
 }
 
 h1 {
-    font-size: 8.8em;
-    color: white;
-    font-family: Eurostile;
-    text-transform: uppercase;
-    position: relative;
-    line-height: 0.9em;
+  font-size: 8.8em;
+  color: white;
+  font-family: Eurostile;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 0.9em;
 }
 
 h2 {
-    font-size: 4.8em;
-    color: white;
-    font-family: Eurostile;
-    text-transform: uppercase;
-    color: rgba(255,255,255,.6);
-    margin-bottom: -0.2em;
+  font-size: 4.8em;
+  color: white;
+  font-family: Eurostile;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+  margin-bottom: -0.2em;
 }
+
+.menu {
+  position: absolute;
+  margin-left: -16em;
+  transition: 1s;
+}
+
+@keyframes pulse {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#chevDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 26px;
+  align-items: center;
+  position: absolute;
+
+}
+
+.chevron {
+  height: 8vh;
+  margin: 13px;
+  max-height: 50px;
+  cursor: pointer;
+  -webkit-animation: pulse 1.7s ease-in infinite;
+}
+

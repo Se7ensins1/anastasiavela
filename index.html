@@ -5,17 +5,20 @@
 		<title>iT mE!</title>
 		<link rel="shortcut icon" href="images/logo.jpg">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/basic.css" />
 		<link rel="stylesheet" href="css/title.css" />
 		<script type="text/javascript" src="js/quote.js"></script>
+		<script type="text/javascript" src="js/chevron.js"></script>
 	</head>
 
 	<body>
 		<div class="row">
 			<div class="col-lg-1">
-				<table class="menu">
+
+				<table class="menu" id="menu">
 					<tr><td id="1menu">
-						<a href="#">
+						<a href="index.html">
 							<div class="buttonCard">
 								<div class="button">
 										<img class="outer" src="images/ring_outer.png">
@@ -57,7 +60,7 @@
 					</td></tr>
 
 					<tr><td id="4menu">
-						<a href="pages/experience.html">
+						<a href="pages/experiences.html">
 							<div class="buttonCard">
 								<div class="button">
 									<img class="outer" src="images/ring_outer.png">
@@ -86,13 +89,19 @@
 				</table>
 			</div>
 
-			<div class="col-lg-10">
+			<div id="chevDiv" >
+				<img class="chevron" id="chevron" onclick="chevron()" src="images/chevronC.png">
+			</div>
+
+			<div class="col-lg-10" id="flexTitle">
 				<div class="main" id="title">
 					<h2 id="port">The portfolio of</h2>
 					<h1 id="name">Anastasia Vela</h1>
-					<div id="quote"></div>
+					<div id="quote" ></div>
 				</div>
 			</div>
+
+			<div class="col-lg-1"></div>
 		</div>
 
 	</body>
