@@ -7,32 +7,22 @@
 }
 
 #bodyCont{
-	width: 80%;
+	width: 82%;
+	/*background-color: rgba(243,243,243, 0.25);*/
+	padding: 20px;
+}
+
+#bodyCont h3 {
+	text-shadow: 0 0 0.25em rgb(58, 242, 119, 1);
 }
 
 p {
 	font-weight: 550;
 }
 
-/*title*/
-h1 {
-	font-size: 6em;
-	margin-top: 0.2em;
-}
-
-h1::first-letter { 
-	font-size: 1.4em;
-	color: rgba(58, 242, 119, 1);
-}
-
-h3 {
-	font-size: 2.8em;
-	text-shadow: 0 0 0.25em rgba(58, 242, 119, 1);
-}
-
 /*scrollbar stuff*/
 .scrollbarText {
-	margin-top: 2em;
+	/*margin-top: 2em;*/
 	height: 88vh;
 	padding-right: 1em;
 	overflow: auto;
