@@ -11,7 +11,9 @@ var captions = [
 	"\"If you are lonely when you`re alone, you are in bad company.\" \n -Jean-Paul Sartre",
 	"\"The changes in our life must come from the impossibility to live...\" \n -Leo Tolstoy",
 	"\"The system is rigged against you.\" ",
-	"\"Ask yourself are you better off now than you were four years ago?\" -Ronald Regan"
+	"\"Ask yourself are you better off now than you were four years ago?\" -Ronald Regan",
+	"\"Musical release. &#127911;\"",
+	"\"It isn't until you run 26.2 miles, when you realize all the places you can go."
 ];
 
 window.onload = function() {

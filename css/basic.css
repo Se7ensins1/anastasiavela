@@ -40,7 +40,7 @@ h1, h2 {
 	color: white;
 	text-transform: uppercase;
 	font-family: Eurostile;
-	font-size: 2.4em;
+	font-size: 2.2em;
 
 	position: absolute;
 	bottom: -.5em;	
@@ -87,15 +87,20 @@ h1, h2 {
 }
 
 .title {
-	font-size: 8.4em;
+	font-size: 6em;
 	line-height: 1em;
 }
 
 .title::first-letter { 
-	font-size: 1.4em;
+	font-size: 1.2em;
 	color: rgba(58, 242, 119, 1);
 }
 
 .hex h1 {
 	font-size: 1em;
+}
+
+#bodyCont{
+	padding: 20px 0;
+	width: 82%;
 }

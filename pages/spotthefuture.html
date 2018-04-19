@@ -93,6 +93,9 @@
 				<div id="bodyCont">
 					<h1 class="title"> Spot-the-Future </h1>
 					<div class="scrollbarText">
+
+						<div id="topGradient"></div>
+						<br>
 						<div class="section">
 							<h3>Introduction</h3>
 
@@ -153,7 +156,7 @@
 							<p>In the bar plot, the features of the predicted most popular song of 2017 are the top bars and the average features of the year used for comparison are the bottom bars, where each bar is the value of a feature. The data was rescaled such that all the features fit on a 0 to 1 scale. The bar plot shows how different the predicted song’s features are from the features of the comparison dataset. Using the 2012 dataset, “You’re Still My Sugar” was predicted as the most popular song. With 2013 and 2014, “Chained to the Rhythm” was the predicted song. With 2015 and 2016, “Stay” was the predicted song.</p>
 						</div>
 
-						<div>
+						<div class="section">
 							<h3>Shiny App</h3>
 
 							<p>The Shiny app features two different word clouds and a k-means cluster plot. The first word cloud in the app takes in a selected year and feature and creates a word cloud where the largest songs have the largest values for that feature. In addition, the user can change the maximum number of songs plotted in the word cloud. The second word cloud in the app is similar to the first, except with different artwork and without the ability to change the maximum number of songs plotted. The k-means cluster plot allows the user to choose a year and two features, plot the songs as a scatter plot, and group the songs together by clusters. The app gives the ability to change the number of clusters from 1 to 9, in addition to the ability to hover over a point and retrieve the point’s song, artist, and feature values.</p>
@@ -161,7 +164,7 @@
 							<p>Visit the Shiny app at: <a href="https://joshasuncion.shinyapps.io/song_visualizer/" target="_blank"> https://joshasuncion.shinyapps.io/song_visualizer</a></p>
 						</div>
 
-						<div>
+						<div class="section">
 							<h3>Conclusion</h3>
 
 							<p>As displayed from the visualizations, we found the energy of the top 100 Billboard songs goes down from 0.737 in 2012 to 0.628 in 2016, while danceability slightly increases from 0.651 to 0.662. In addition, we found that the loudness for the song decreases from 0.842 to 0.760. This implies that the trend for the more popular songs is changing to less energetic, but more danceable songs, which is peculiar because it would be assumed that the more energetic a song is, the more danceable it is. Almost all top songs have a 4/4 time signature.</p>
@@ -170,7 +173,7 @@
 
 						</div>
 
-						<div>
+						<div class="section">
 							<h3>Final Thoughts</h3>
 
 							<p>One challenge that we faced: while we were collecting data, some tracks share same names with other songs by different artists and/or different versions. The code returned an error message because the API did not know which value to return. To resolve this, we found that Spotify assigns a unique ID to each track. Therefore, we decided to manually collect ID for each song by inserting an additional column and used ID to extract audio features.</p>
@@ -179,6 +182,8 @@
 
 							<p>We had a lot of fun working on the project from collecting data to exploring different options and tools to make visualizations. Although we hit roadblocks when we first tried to use Facebook API to extract mutual friends’ data for our first project idea, we enjoyed the process of exploring other interesting options and coming up with this new idea. We used a variety of tools including Python, R, and Tableau to visualize our data and have found interesting patterns and trends that can be used to explain real world phenomenons about popular songs.</p>
 						</div>
+
+						<div id="bottomGradient"></div>
 					</div>
 				</div>
 			</div>
