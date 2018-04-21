@@ -10,12 +10,21 @@
 		<link rel="stylesheet" href="css/title.css" />
 		<script type="text/javascript" src="js/quote.js"></script>
 		<script type="text/javascript" src="js/chevron.js"></script>
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("smallNav.html");
+			});
+		</script>
 	</head>
 
 	<body>
-		<div class="row">
-			<div class="col-lg-1">
 
+		<div id="nav-placeholder"></div>
+
+
+		<div class="row">
+
+			<div class="col-lg-2">
 				<table class="menu" id="menu">
 					<tr><td id="1menu">
 						<a href="index.html">
@@ -89,11 +98,13 @@
 				</table>
 			</div>
 
+
+
 			<div id="chevDiv" >
 				<img class="chevron" id="chevron" src="images/chevronC.png">
 			</div>
 
-			<div class="col-lg-10" id="flexTitle">
+			<div class="col-lg-9" id="flexTitle">
 				<div class="main" id="title">
 					<h2 id="port">The portfolio of</h2>
 					<h1 id="name">Anastasia Vela</h1>

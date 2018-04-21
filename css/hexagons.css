@@ -1,12 +1,8 @@
 /**{border: 1px white solid }*/
 
-.col-lg-11 {
+.col-lg-10 {
 	display: flex;
 	justify-content: center;
-}
-
-#bodyCont{
-	width: 87%;
 }
 
 p {

@@ -16,6 +16,10 @@ h1, h2 {
 	text-transform: uppercase;
 }
 
+#nav-placeholder {
+	display: none;
+}
+
 /*Buttons*/
 .menu {
 	position: absolute;
@@ -102,5 +106,17 @@ h1, h2 {
 
 #bodyCont{
 	padding: 20px 0;
-	width: 82%;
+	width: 100%;
+}
+
+@media(max-width:980px)  {     
+	#bodyCont {
+	    width: 82%;
+	}
+	#menu {
+		display: none;
+	}
+	#nav-placeholder {
+		display: block;
+	}
 }
