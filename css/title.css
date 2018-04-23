@@ -8,7 +8,7 @@
 }
 
 #title {
-  width: 600px;
+  width: 565px;
   background-color: rgba(72,72,72, 0.8);
   padding: 50px;
   -webkit-animation: fadein 3s;
@@ -65,11 +65,9 @@ h2 {
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin-left: 30px;
-  width: 26px;
+  margin-left: 25px;
   align-items: center;
   position: absolute;
-  /*border: 1px white solid*/
 }
 
 .chevron {
