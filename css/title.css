@@ -74,6 +74,7 @@ h2 {
   height: 6vh;
   max-height: 100px;
   cursor: pointer;
+  z-index: 1;
   -webkit-animation: pulse 1.7s ease-in infinite;
 }
 
