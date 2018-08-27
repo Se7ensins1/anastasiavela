@@ -1,7 +1,10 @@
 /*https://i.imgur.com/0bImJzX.jpg*/
 body {
-	background-color:  rgb(12, 31, 63);
-	background: url("https://i.imgur.com/Q15q9RE.png") no-repeat center center fixed;
+	background-color:  rgb(0, 0, 0);
+	background-image: url("https://i.imgur.com/Q15q9RE.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	background-size: cover;
 	font-size: 10px;
 	overflow: hidden;
